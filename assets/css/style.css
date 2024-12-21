@@ -1,0 +1,244 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+}
+/*Common CSS Part Start*/
+a{
+     text-decoration: none;
+}
+ul,ol{
+     list-style: none;
+}
+:root{
+     --Roboto: "Roboto", serif;
+     --Inter: "Inter", serif;
+}
+body{
+     width: 100%;
+     height: 100%;
+     background: url(/assets/images/background.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+/*Common CSS Part End*/
+/*Navbar CSS Part Start*/
+nav{
+     margin-top: 39px;
+}
+.fuhadShiblu_logo img{
+     width: 99px;
+     height: 35.03px;
+}
+.fuhadShiblu_btn{
+     display: flex;
+     justify-content: end;
+}
+.fuhadShiblu_btn a{
+     width: 81px;
+     height: 38.64px;
+     font-size: 20px;
+     font-weight: 600;
+     font-family: var(--Roboto);
+     color: #000;
+     position: relative;
+     text-align: center;
+     line-height: 38.64px;
+     border-radius: 18px;
+     transition: all linear .1s;
+}
+.fuhadShiblu_btn a:hover{
+     background: #000;
+     color: #fff;
+     font-size: 16px;
+     font-weight: 500;
+}
+.fuhadShiblu_btn a::after{
+     content: '';
+     width: 20px;
+     height: 2px;
+     background: #000;
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     transform: translateX(-50%);
+}
+.fuhadShiblu_signIn{
+     margin-right: 32px;
+}
+/*Navbar CSS Part End*/
+/*Bot and Form CSS Part Start*/
+#fuhadShiblu_botMain{
+     margin-top: 179.67px;
+}
+.fuhadShiblu_botImg img{
+     width: 587px;
+     height: 770.1px;
+}
+.fuhadShiblu_form{
+     width: 372px;
+}
+.fuhadShiblu_form form h1{
+     font-size: 36px;
+     font-weight: 600;
+     font-family: var(--Roboto);
+     color: #000;
+     text-align: center;
+     text-transform: capitalize;
+}
+.fuhadShiblu_form form h1 span{
+     display: block;
+}
+.fuhadShiblu_form form input{
+     width: 100%;
+     border: 1px solid #fff;
+     outline: none;
+     background: #EAF0F7;
+     border-radius: 8px;
+     padding: 18px 0 17px 25px;
+     font-size: 22px;
+     font-weight: 500;
+     font-family: var(--Roboto);
+     color: #000;
+}
+.fuhadShiblu_form form input:focus{
+     border: 1px solid #000;
+}
+.fuhadShiblu_form form input::placeholder{
+     color: #9A9A9A;
+     font-weight: 300;
+}
+.fuhadShiblu_inpUsername{
+     margin: 55px 0 20px;
+}
+.fuhadShiblu_inpPassword{
+     margin-bottom: 14px;
+}
+.fuhadShiblu_forPass{
+     text-align: end;
+}
+.fuhadShiblu_forPass a{
+     font-size: 18px;
+     font-weight: 200;
+     font-family: var(--Roboto);
+     color: #000;
+     display: inline-block;
+     text-transform: capitalize;
+}
+.fuhadShiblu_forPass a:hover{
+     text-decoration: underline;
+}
+.fuhadShiblu_form form button{
+     width: 100%;
+     border: none;
+     outline: none;
+     background: #050505;
+     color: #fff;
+     font-size: 18px;
+     font-weight: 900;
+     font-family: var(--Roboto);
+     text-transform: capitalize;
+     border-radius: 8px;
+     padding: 18px 0 17px;
+     margin: 47px 0 35px;
+     transition: all linear .1s;
+}
+.fuhadShiblu_form form button:hover{
+     background: #242424;
+     color: #b3b3b3;
+}
+.fuhadShiblu_form form button:active{
+     transform: scale(1.1);
+}
+.fuhadShiblu_orConWith{
+     font-size: 18px;
+     font-family: var(--Inter);
+     font-weight: 400;
+     color: #000;
+     text-transform: capitalize;
+     text-align: center;
+     position: relative;
+}
+.fuhadShiblu_orConWith::before{
+     content: '';
+     width: 101px;
+     height: 1px;
+     background: #000;
+     position: absolute;
+     top: 50%;
+     left: 0;
+     transform: translateY(-50%);
+}
+.fuhadShiblu_orConWith::after{
+     content: '';
+     width: 101px;
+     height: 1px;
+     background: #000;
+     position: absolute;
+     top: 50%;
+     right: 0;
+     transform: translateY(-50%);
+}
+.fuhadShiblu_otherSclLinks{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 42px 0 52px;
+}
+.fuhadShiblu_otherSclLinks a{
+     width: 87px;
+     height: 52px;
+     background: #000;
+     border-radius: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: all linear .1s;
+}
+.fuhadShiblu_otherSclLinks a:hover{
+     background: #252525;
+}
+.fuhadShiblu_otherSclLinks a:active{
+     transform: scale(1.1);
+}
+.fuhadShiblu_otherSclLinks a img{
+     width: 30px;
+     height: 30px;
+}
+.fuhadShiblu_newAcnt{
+     text-transform: capitalize;
+     text-align: center;
+     font-size: 20px;
+     font-weight: 300;
+     font-family: var(--Roboto);
+     color: #000;
+}
+.fuhadShiblu_newAcnt a{
+     color: #020202;
+     font-weight: 900;
+}
+.fuhadShiblu_newAcnt a:hover{
+     text-decoration: underline;
+}
+/*Bot and Form CSS Part End*/
+/*Footer CSS Part Start*/
+footer{
+     text-align: center;
+     margin: 10px;
+     font-size: 15px;
+     font-weight: 500;
+     text-transform: capitalize;
+}
+.fuhadShiblu_heart{
+     color: rgb(255, 0, 0);
+}
+footer a{
+     color: #000;
+     font-weight: 900;
+}
+footer a:hover{
+     text-decoration: underline;
+}
+/*Footer CSS Part End*/
